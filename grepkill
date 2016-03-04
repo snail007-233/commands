@@ -4,4 +4,5 @@ then
 ps -ef | grep $1 | grep -v grep | awk '{print $2}' | xargs -r  kill -9
 else
 echo usage: $0 keyword
+exit 1
 fi
